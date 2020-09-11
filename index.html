@@ -1,19 +1,50 @@
 <!doctype html>
 <html>
 <head>
+<script src="https://kit.fontawesome.com/84467fe31b.js" crossorigin="anonymous"></script>
 <meta charset="utf-8">
-<title>Samm's Homepage</title>
+<title>Samm's Page</title>
 </head>
 <style>
 	body {
-		background-image: url('Images/gladiator.jpg')
+	<!-- background-image: url('Images/edgy2.jpeg'); -->
+	background-position: center;
 	}
+	
 	h1 {color:cornflowerblue}
-	p {color:cornflowerblue}
+	p {color:orangered}
+	
+	video{
+		position:absolute
+	}
+	
+	
+	#videoDiv {width: 100%; height: 360px; position: center;}
+	#videoBlock {width: 100%; height: 100%;  display: flex;  justify-content: center; align-items: center;}
+	#info {width: 100%; height:100%; position: absolute; top: 0; left: 0;}
+	#info h1 {text-align:center}
+	#info p {text-align:center}<br>
+
 </style>
 
 <body>
-	<h1><strong>Sammerson</strong></h1>
-	<p></p>
+	<div id="videoDiv">
+		<div id="videoBlock">
+			<video id="video" preload autoplay muted playsinline loop width="3840" height="2160">
+			<source src="Videos/stars2.mp4" type="video/mp4">
+			</video>
+				<div id="info"><h1 class="spacer" style="serif"><strong><em>Sammerson</em></strong></h1>
+				<p>Probably more techie than you think</p>
+					<div id="icons" style="font-size: 48px; text-align:center">
+						<a href="https://steamcommunity.com/id/Sammerson/"><i class="fab fa-steam"></i></a>
+						<a href="https://www.reddit.com/user/nosremmaS"><i class="fab fa-reddit-alien"></i></a>
+						<a href="https://github.com/nosremmaS"><i class="fab fa-github"></i></a><br>
+						<a href="https://ko-fi.com/sammerson"><i class="fas fa-coffee" style="font-size:38px"></i></a>
+						<i class="fab fa-discord" style="color:#7289DA; font-size:28px">Samm#1024</i>
+						<a href="https://www.redbubble.com/people/Sammerson/shop?asc=u&ref=account-nav-dropdown"><i class="fas fa-tshirt"></i></a>
+					</div>
+				</div>
+		</div>
+	</div>
 </body>
 </html>
